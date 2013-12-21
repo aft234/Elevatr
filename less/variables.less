@@ -15,6 +15,13 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
+// Custom colors
+// --------------------------
+@white:                  #ffffff;
+@gray-alternative:       rgb(122, 143, 163);
+@gray-alternative-2:     rgb(102, 129, 136);
+@gray-light-alternative: #e7e7e7;
+
 // Brand colors
 // -------------------------
 
@@ -39,12 +46,12 @@
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          16px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 
@@ -254,14 +261,15 @@
 // -------------------------
 
 // Basics of a navbar
-@navbar-height:                    50px;
+@navbar-height:                    100px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
 @navbar-default-color:             #777;
-@navbar-default-bg:                #f8f8f8;
+// @navbar-default-bg:                #f8f8f8;
+@navbar-default-bg:                @white;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
